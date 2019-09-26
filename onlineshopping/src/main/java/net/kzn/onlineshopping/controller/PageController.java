@@ -16,6 +16,15 @@ public class PageController {
 		return mv;
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	//mokled es node.js GET da POST requestebis pontia ra
 	
 	// anu karoche @ReqParam migebul parametrs daarqvems "greeting"s
@@ -36,19 +45,19 @@ public class PageController {
 //		return mv;
 //	}
 	
-	//axla path variable imis pontia linkidan ro ginda ragacis amogeba
-	//magalitad userma sheiyvana ?greeting="gamarjoba" da ginda eg gamarjoba amoigo
-	
-		
-	@RequestMapping(value="/test/{greeting}")
-	public ModelAndView test(@PathVariable("greeting")String greeting){
-		if(greeting==null){
-			greeting="parametri dagaviwyda yvero(isev)";
-		}
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("greeting", greeting);
-		return mv;
-	}
+//	//axla path variable imis pontia linkidan ro ginda ragacis amogeba
+//	//magalitad userma sheiyvana ?greeting="gamarjoba" da ginda eg gamarjoba amoigo
+//	
+//	//am shemtxvevahi ekranze dagiwers imas rasac ?greeting= miutiteb	
+//	@RequestMapping(value="/test/{greeting}")
+//	public ModelAndView test(@PathVariable("greeting")String greeting){
+//		if(greeting==null){
+//			greeting="parametri dagaviwyda yvero(isev)";
+//		}
+//		ModelAndView mv = new ModelAndView("page");
+//		mv.addObject("greeting", greeting);
+//		return mv;
+//	}
 }
 
 
